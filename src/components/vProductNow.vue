@@ -90,11 +90,3 @@ onMounted(() => {
   </div>
 </template>
 
-<style lang="scss">
-
-.product-card{
-  &-foot{
-    background: #FF0;
-  }
-}
-</style>
