@@ -10,7 +10,7 @@
         <div class="save-order-left-price">12 344₽</div>
       </div>
       <div class="save-order-right">
-        <button>Сохранить</button>
+        <button>Оформить</button>
       </div>
     </div>
 </div>

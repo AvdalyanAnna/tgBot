@@ -17,7 +17,14 @@ const router = createRouter({
     {
       path:'/order',
       component: () => import('../views/MyOrder.vue'),
-
+    },
+    {
+      path:'/history',
+      component: () => import('../views/PageHistory.vue'),
+    },
+    {
+      path:'/payments',
+      component: () => import('../views/PagePayments.vue'),
     }
     // {
     //   path: "/:catchAll(.*)",

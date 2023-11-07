@@ -3,7 +3,7 @@ const menu = [
   {
     icon: '/assets/icon/story.svg',
     text: 'История',
-    to:'#'
+    to:'/history'
   },
   {
     icon: '/assets/icon/profile.svg',
