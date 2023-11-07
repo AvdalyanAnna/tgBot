@@ -8,7 +8,7 @@ const menu = [
   {
     icon: '/assets/icon/profile.svg',
     text: 'Профиль',
-    to:'#'
+    to:'/login'
   },
   {
     icon: '/assets/icon/my_order.svg',

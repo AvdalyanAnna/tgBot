@@ -175,6 +175,7 @@ input{
   font-size: 14px;
   font-weight: 400;
   line-height: 142%;
+  outline: none;
   &::placeholder{
     color: var(--neutral-400, #94A3B8);
   }

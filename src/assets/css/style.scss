@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +21,8 @@
   --brand-600-main: #974DDE;
   --basic-black: #000;
   --basic-white: #FFF;
+  --on-color-day-variant-1-secondary: #3B4E6A;
+  --basic-day-supporting:#9BADCA;
   --bg-grey: #D9D9D9;
   --tg-theme-button-color: #3e88f7;
   --tg-theme-secondary-bg-color: #FFF;
@@ -42,7 +44,10 @@
     --brand-600-main: #6E3C8F;
     --basic-black: #FFF;
     --basic-white: #000;
+    --on-color-day-variant-1-secondary: #C4C7CD;
+    --basic-day-supporting: #4F5E76;
     --bg-grey: #6E6E6E;
+
     --tg-theme-button-color: #3e88f7;
     --tg-theme-secondary-bg-color: #2c2c2e;
     --tg-theme-bg-color: #000000;
@@ -53,9 +58,7 @@
 
 @import "ui";
 @import "product";
-
-
-
+@import "auth";
 
 
 .card {
@@ -91,8 +94,6 @@
 .my-order {
   font-family: Inter;
 }
-
-
 
 
 .save-order {
