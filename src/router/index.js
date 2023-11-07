@@ -14,6 +14,11 @@ const router = createRouter({
       name: 'home',
       component: () => import('../views/HomeView.vue'),
     },
+    {
+      path:'/order',
+      component: () => import('../views/MyOrder.vue'),
+
+    }
     // {
     //   path: "/:catchAll(.*)",
     //   component: () => import('../views/NotFound.vue'),

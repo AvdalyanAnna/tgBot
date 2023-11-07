@@ -1,5 +1,5 @@
 <script setup>
-import VProductNow from "@/components/vProductNow.vue";
+import VProductNow from "@/components/product/vProductNow.vue";
 import VOffer from "@/components/vOffer.vue";
 import VSaveOrder from "@/components/vSaveOrder.vue";
 import VHeader from "@/components/vHeader.vue";

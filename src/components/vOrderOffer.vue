@@ -32,7 +32,7 @@ const products = ref([
       <div class="offer-inner">
         <h2 class="offer-title offer-title-big">Мой заказ</h2>
 
-        <v-product-item v-for="(item,index) in products" :key="index" :item="item"/>
+        <v-product-item v-for="(item,index) in products" :key="index" :item="item" canDelete/>
       </div>
     </div>
   </div>

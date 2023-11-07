@@ -1,17 +1,19 @@
 <script setup>
-
 const menu = [
   {
     icon: '/assets/icon/story.svg',
-    text: 'История'
+    text: 'История',
+    to:'#'
   },
   {
     icon: '/assets/icon/profile.svg',
-    text: 'Профиль'
+    text: 'Профиль',
+    to:'#'
   },
   {
     icon: '/assets/icon/my_order.svg',
-    text: 'Мой заказ'
+    text: 'Мой заказ',
+    to:'/order'
   },
 ]
 </script>
@@ -22,8 +24,10 @@ const menu = [
       <nav class="header-inner">
         <ul class="header-list">
           <li class="header-item" v-for="(item,index) in menu" :key="index">
-            <img v-if="item.icon" alt="icon" :src="item.icon">
-            <span>{{ item.text }}</span>
+            <router-link :to="item.to" class="header-link">
+              <img v-if="item.icon" alt="icon" :src="item.icon">
+              <span>{{ item.text }} </span>
+            </router-link>
           </li>
         </ul>
       </nav>
@@ -42,13 +46,17 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-.header-item{
-  margin: 0 5px;
-  width: 100%;
+.header-link{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  flex: 1;
+}
+.header-item{
+  margin: 0 5px;
+  width: 100%;
+  display: flex;
   height: 66px;
   gap: 0;
   padding: 7px 24px 8px;
