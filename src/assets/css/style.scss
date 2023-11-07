@@ -115,7 +115,8 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: rgba(255, 255, 255, 0.50);
+    background: var(--tg-theme-secondary-bg-color, #fff);
+    opacity: 70%;
     width: 100%;
     height: 100%;
     backdrop-filter: blur(2px);

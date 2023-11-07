@@ -12,5 +12,5 @@ import VHeader from "@/components/vHeader.vue";
     <v-product-now/>
   </div>
     <v-offer/>
-  <!--  <v-save-order/>-->
+    <v-save-order/>
 </template>
