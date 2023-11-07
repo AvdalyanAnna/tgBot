@@ -64,7 +64,7 @@ button {
   width: 100%;
   padding: 8px 16px;
   border-radius: 8px;
-  background: var(--tg-theme-button-color, --brand-600-main, #974DDE);
+  background: var(--tg-theme-button-color, #974DDE);
 
   svg {
     margin-right: 8px;
@@ -73,7 +73,7 @@ button {
     background: var(--neutral-100, #F1F5F9);
   }
   &-primary-color{
-    background:  var(--tg-theme-button-color, --brand-600-main, #974DDE);
+    background:  var(--tg-theme-button-color, #974DDE);
   }
 }
 
