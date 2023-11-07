@@ -154,7 +154,7 @@ input[type='number']::-webkit-outer-spin-button {
 input{
   border-radius: 8px;
   border: 1px solid var(--neutral-400, #94A3B8);
-  background: var(--basic-white, #FFF);
+  background: var(--tg-theme-secondary-bg-color, #FFF);
   color: var(--neutral-900, #0F172A);
   font-family: Inter;
   font-size: 14px;
