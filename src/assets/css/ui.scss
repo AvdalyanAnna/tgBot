@@ -65,6 +65,7 @@ button {
   padding: 8px 16px;
   border-radius: 8px;
   background: var(--tg-theme-button-color, #974DDE);
+  font-family: Inter;
 
   svg {
     margin-right: 8px;
@@ -75,6 +76,20 @@ button {
   &-primary-color{
     background:  var(--tg-theme-button-color, #974DDE);
   }
+  &-big{
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+}
+.title{
+  color: var(--basic-black);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
 }
 
 .users{

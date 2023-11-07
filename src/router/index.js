@@ -25,6 +25,10 @@ const router = createRouter({
     {
       path:'/payments',
       component: () => import('../views/PagePayments.vue'),
+    },
+    {
+      path:'/product',
+      component: () => import('../views/Product.vue'),
     }
     // {
     //   path: "/:catchAll(.*)",

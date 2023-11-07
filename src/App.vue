@@ -44,9 +44,7 @@ export default {
     }
   },
   mounted() {
-    this.tg = window.Telegram.WebApp
-    console.log(this.tg)
-    console.log(this.tg.themeParams)
+    this.tg = window?.Telegram?.WebApp
   },
 }
 </script>
