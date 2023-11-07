@@ -4,23 +4,23 @@ import VProductItem from "@/components/product/vProductItem.vue";
 
 const products = ref([
   {
-    img:'/assets/img/product-min.png',
+    img:'/assets/img/product-min.jpg',
     title:'Тунец',
     price:'185',
     oldPrice:'235',
   },
   {
-    img:'/assets/img/product-min.png',
+    img:'/assets/img/product-min.jpg',
     title:'Тушенка БРТ',
     price:'235',
   },
   {
-    img:'/assets/img/product-min.png',
+    img:'/assets/img/product-min.jpg',
     title:'Тушенка БРТ',
     price:'235',
   },
   {
-    img:'/assets/img/product-min.png',
+    img:'/assets/img/product-min.jpg',
     title:'Тушенка БРТ',
     price:'235',
   }
