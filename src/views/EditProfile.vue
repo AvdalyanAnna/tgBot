@@ -39,7 +39,7 @@ const send = () =>{
                   <label for="changeAvatar" class="form-avatar-round">
                     M
                   </label>
-                  <label for="changeAvatar" class="form-avatar-label">Изменить</label>
+                  <label for="changeAvatar" class="form-avatar-label">Изменить 1</label>
                   <input id="changeAvatar" type="file"/>
                 </div>
               </div>
