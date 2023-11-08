@@ -161,7 +161,6 @@ export default {
       e.preventDefault()
       console.log(this.code.length,this.amount)
       if (this.code.length === this.amount) {
-        alert(1)
         this.$router.push('/code-ok')
       } else {
         this.errors = true
