@@ -17,6 +17,8 @@ input {
 
 .form {
   &-avatar {
+    width: 100%;
+    max-width: 94px;
     &-round {
       display: flex;
       align-items: center;
