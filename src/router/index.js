@@ -37,6 +37,18 @@ const router = createRouter({
     {
       path:'/code',
       component: () => import('../views/LoginCode.vue'),
+    },
+    {
+      path:'/code-ok',
+      component: () => import('../views/LoginCodeOk.vue'),
+    },
+    {
+      path:'/edit-profile',
+      component: () => import('../views/EditProfile.vue'),
+    },
+    {
+      path:'/edit-address',
+      component: () => import('../views/EditAddress.vue'),
     }
     // {
     //   path: "/:catchAll(.*)",

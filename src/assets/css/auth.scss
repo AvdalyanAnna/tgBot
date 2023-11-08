@@ -3,13 +3,17 @@
     padding: 16px;
 
   }
+
   &-page {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    &-form{
+      min-height: 70vh;
+      height: auto;
+    }
     .wrapper {
       width: 100%;
     }

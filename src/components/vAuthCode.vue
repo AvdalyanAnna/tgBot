@@ -33,7 +33,7 @@
 
     <span v-else class="recover__btn cursor-pointer mb-[24px]" @click="repeatVerification()">Отправить еще раз</span>
 
-    <button class="btn btn-big auth-btn">
+    <button type="submit" class="btn btn-big auth-btn">
       Продолжить
       <svg class="mr-0 ml-[8px]" width="21" height="20" viewBox="0 0 21 20" fill="none"
            xmlns="http://www.w3.org/2000/svg">
@@ -159,8 +159,10 @@ export default {
     },
     async send(e) {
       e.preventDefault()
-      if (this.code.length === this.amount - 1) {
+      console.log(this.code.length,this.amount)
+      if (this.code.length === this.amount) {
         alert(1)
+        this.$router.push('/code-ok')
       } else {
         this.errors = true
       }
