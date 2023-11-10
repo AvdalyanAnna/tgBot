@@ -1,7 +1,12 @@
 <script setup>
-import {ref} from "vue";
+import {defineProps, ref} from "vue";
 import VProductItem from "@/components/product/vProductItem.vue";
-
+defineProps({
+  title:{
+    type:String,
+    default:''
+  },
+})
 const products = ref([
   {
     img:'/assets/img/product-min.jpg',
@@ -35,7 +40,7 @@ const products = ref([
   <div class="offer">
     <div class="wrapper">
       <div class="offer-inner">
-        <h2 class="offer-title">Предложение:</h2>
+        <h2 class="offer-title">{{ title }} </h2>
 
         <v-product-item v-for="(item,index) in products" :key="index" :item="item"/>
       </div>

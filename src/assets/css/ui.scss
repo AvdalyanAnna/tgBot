@@ -83,6 +83,19 @@ button {
     line-height: 24px;
   }
 }
+
+.block{
+  &-header{
+    margin: 10px 0;
+  }
+  &-link{
+    color: var(--tg-theme-button-color, #2F80ED);
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+}
 .title{
   color: var(--basic-black);
   font-family: Inter;
@@ -90,6 +103,14 @@ button {
   font-style: normal;
   font-weight: 600;
   line-height: 32px; /* 133.333% */
+  &-sub{
+    color: var(--basic-black);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
 }
 
 .users{

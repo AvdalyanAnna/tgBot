@@ -1,4 +1,37 @@
 .product-card {
+  margin: 10px 0;
+  &-list{
+    display: flex;
+    overflow-x: auto;
+    margin: 0 -10px;
+    padding: 0 10px 10px;
+  }
+  &.list{
+    min-width: calc(100vw - 50px);
+    width: 100%;
+    margin:0  10px;
+    &:nth-child(1){
+      margin-left: 0;
+    }
+    &:nth-child(2){
+      margin-right: 0;
+    }
+  }
+  &-photo{
+    img{
+      width: 100%;
+      max-height: 186px;
+      object-fit:cover;
+      border-radius: 8px  8px 0 0;
+    }
+
+  }
+  &-inner{
+      margin: 0;
+      border-radius: 0 0 8px  8px ;
+      padding:  16px 24px 10px;
+      background: var(--tg-theme-secondary-bg-color, --basic-white, #FFF);
+  }
   &-head {
     width: 100%;
     display: flex;

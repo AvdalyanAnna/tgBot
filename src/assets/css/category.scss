@@ -1,0 +1,36 @@
+.v-category{
+  height: 66px;
+  padding: 7px 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--neutral-200, #E2E8F0);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+
+
+  color: var(--neutral-600, #475569);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px; /* 116.667% */
+
+
+  &:nth-child(1){
+    margin-left: 0;
+  }
+  &:nth-last-child(1){
+    margin-right: 0;
+  }
+}
+.v-categories{
+  display: flex;
+  overflow-x: auto;
+  margin: 0 -10px;
+  padding: 0 10px 10px;
+
+}
