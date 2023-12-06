@@ -1,9 +1,14 @@
 <template>
-  <div class="template-main ">
+  <div className="template-main ">
     ---- tg ----
-    <pre v-if="tg">{{tg}}</pre>
+    <pre v-if="tg">{{ tg }}</pre>
+    <div v-if="userInformation">
+      <h2>Информация о пользователе</h2>
+      <p>Номер телефона: {{ userInformation.phone }}</p>
+      <p>ID пользователя: {{ userInformation.id }}</p>
+      <!-- Другие свойства пользователя, которые вы хотите отобразить -->
+    </div>
   </div>
-
 </template>
 
 <script>
@@ -12,44 +17,28 @@ export default {
   data() {
     return {
       tg: null,
-      colors: {
-        "section_header_text_color": "#6d6d72",
-        "button_text_color": "#ffffff",
-        "subtitle_text_color": "#8e8e93",
-        "button_color": "#007aff",
-        "secondary_bg_color": "#efeff4",
-        "text_color": "#000000",
-        "section_bg_color": "#ffffff",
-        "hint_color": "#8e8e93",
-        "destructive_text_color": "#ff3b30",
-        "bg_color": "#ffffff",
-        "link_color": "#007aff",
-        "header_bg_color": "#f8f8f8",
-        "accent_text_color": "#007aff"
-      },
-      colors1: {
-        "secondary_bg_color": "#1c1c1d",
-        "text_color": "#ffffff",
-        "link_color": "#3e88f7",
-        "button_text_color": "#ffffff",
-        "accent_text_color": "#3e88f7",
-        "button_color": "#3e88f7",
-        "header_bg_color": "#1a1a1a",
-        "section_bg_color": "#2c2c2e",
-        "section_header_text_color": "#8d8e93",
-        "bg_color": "#000000",
-        "destructive_text_color": "#eb5545",
-        "subtitle_text_color": "#98989e",
-        "hint_color": "#98989e"
-      }
+      userInformation: null,
     }
   },
   mounted() {
-    this.tg = window?.Telegram?.WebApp
+    this.tg = window?.Telegram?.WebApp;
+
+    // Предположим, что у вас есть метод для получения информации о пользователе
+    // Обратитесь к документации Telegram API для правильной реализации
+    this.getUserInformation();
+  },
+  methods: {
+    // Пример метода для получения информации о пользователе
+    async getUserInformation() {
+      // Ваш код для получения информации о пользователе
+      // Например, использование Telegram API
+      try {
+        const response = await this.tg.getUserInformation(); // Замените на реальный метод Telegram API
+        this.userInformation = response.data; // Предположим, что информация о пользователе возвращается в формате JSON
+      } catch (error) {
+        console.error('Ошибка при получении информации о пользователе:', error);
+      }
+    },
   },
 }
 </script>
-
-<style lang="scss">
-@import "assets/css/style.scss";
-</style>
