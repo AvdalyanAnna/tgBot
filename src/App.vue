@@ -1,7 +1,8 @@
 <template>
   <div class="template-main ">
+    tg.backgroundColor 2
+
     <div v-if="tg">
-      tg.backgroundColor 2
       <br>
       <pre >{{ tg.backgroundColor }}</pre>
 
