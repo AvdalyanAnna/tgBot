@@ -1,6 +1,6 @@
 <template>
   <div class="template-main ">
-    tg ----
+   ---- tg ----
     <pre v-if="tg">{{window?.Telegram?.WebApp}}</pre>
   </div>
 
