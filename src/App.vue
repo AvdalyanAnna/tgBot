@@ -1,6 +1,6 @@
 <template>
   <div class="template-main ">
-    <router-view></router-view>
+    <pre v-if="tg">{{tg}}</pre>
   </div>
 
 </template>
