@@ -1,7 +1,7 @@
 <template>
   <div class="template-main ">
     <div v-if="tg">
-      tg.backgroundColor 1
+      tg.backgroundColor 2
       <br>
       <pre >{{ tg.backgroundColor }}</pre>
 
