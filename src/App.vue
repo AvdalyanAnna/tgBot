@@ -1,7 +1,7 @@
 <template>
   <div class="template-main ">
-   ---- tg ----
-    <pre v-if="tg">{{window?.Telegram?.WebApp}}</pre>
+    ---- tg ----
+    <pre v-if="tg">{{tg}}</pre>
   </div>
 
 </template>
@@ -11,7 +11,7 @@ export default {
   name: 'App',
   data() {
     return {
-      tg: {},
+      tg: null,
       colors: {
         "section_header_text_color": "#6d6d72",
         "button_text_color": "#ffffff",
@@ -46,8 +46,6 @@ export default {
   },
   mounted() {
     this.tg = window?.Telegram?.WebApp
-    alert(1)
-    alert(this.tg?.initData || 2)
   },
 }
 </script>
