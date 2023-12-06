@@ -46,7 +46,8 @@ export default {
     }
   },
   mounted() {
-    this.tg = window?.Telegram?.WebApp
+    this.tg = window.Telegram.WebApp
+    this.tg.expand();
   },
 }
 </script>
