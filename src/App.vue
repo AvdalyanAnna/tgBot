@@ -1,8 +1,11 @@
 <template>
   <div class="template-main ">
-    tg.backgroundColor 1
-    <br>
-    <pre v-if="tg">{{ tg.backgroundColor }}</pre>
+    <div v-if="tg">
+      tg.backgroundColor 1
+      <br>
+      <pre >{{ tg.backgroundColor }}</pre>
+
+    </div>
   </div>
 
 </template>
@@ -46,8 +49,10 @@ export default {
     }
   },
   mounted() {
-    this.tg = window.Telegram.WebApp
-    this.tg.expand();
+    setTimeout(()=>{
+      this.tg = window.Telegram.WebApp
+
+    },1000)
   },
 }
 </script>
