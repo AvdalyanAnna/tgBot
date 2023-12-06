@@ -1,7 +1,7 @@
 <template>
   <div className="template-main ">
     ---- tg ----
-    <pre v-if="tg">{{ tg }}</pre>
+    <pre v-if="tg">{{ tg.backgroundColor }}</pre>
     <div v-if="userInformation">
       <h2>Информация о пользователе</h2>
       <p>Номер телефона: {{ userInformation.phone }}</p>
