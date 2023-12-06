@@ -1,7 +1,7 @@
 <template>
   <div class="template-main ">
     tg ----
-    <pre v-if="tg">{{tg}}</pre>
+    <pre v-if="tg">{{window?.Telegram?.WebApp}}</pre>
   </div>
 
 </template>
