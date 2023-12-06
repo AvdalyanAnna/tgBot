@@ -1,6 +1,6 @@
 <template>
   <div class="template-main ">
-    tg.backgroundColor
+    tg.backgroundColor 1
     <br>
     <pre v-if="tg">{{ tg.backgroundColor }}</pre>
   </div>
