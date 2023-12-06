@@ -1,5 +1,6 @@
 <template>
   <div class="template-main ">
+    tg ----
     <pre v-if="tg">{{tg}}</pre>
   </div>
 
@@ -10,7 +11,7 @@ export default {
   name: 'App',
   data() {
     return {
-      tg: null,
+      tg: {},
       colors: {
         "section_header_text_color": "#6d6d72",
         "button_text_color": "#ffffff",
