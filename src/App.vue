@@ -4,7 +4,7 @@
 
     <div v-if="tg">
       <br>
-      <pre >{{ tg.backgroundColor }}</pre>
+      <pre >{{ tg }}</pre>
 
     </div>
   </div>
