@@ -4,7 +4,7 @@
 
     <div v-if="tg">
       <br>
-      <pre >{{ tg }}</pre>
+      <pre >{{ tg.initDataUnsafe }}</pre>
 
     </div>
   </div>
