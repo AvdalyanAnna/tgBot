@@ -46,6 +46,8 @@ export default {
   },
   mounted() {
     this.tg = window?.Telegram?.WebApp
+    alert(1)
+    alert(this.tg.initData)
   },
 }
 </script>
