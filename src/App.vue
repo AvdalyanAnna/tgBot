@@ -50,10 +50,7 @@ export default {
     }
   },
   mounted() {
-    setTimeout(()=>{
-      this.tg = window.Telegram
-
-    },1000)
+    this.tg = window.Telegram.WebApp
   },
 }
 </script>
