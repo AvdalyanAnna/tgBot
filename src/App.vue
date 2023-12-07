@@ -4,7 +4,9 @@
 
     <div v-if="tg">
       <br>
-      <pre >{{ tg.initDataUnsafe }}</pre>
+      <pre >{{ tg.contactRequested }}</pre>
+      -------
+      <pre >{{ tg }}</pre>
 
     </div>
   </div>
