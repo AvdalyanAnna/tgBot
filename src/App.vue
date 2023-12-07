@@ -1,6 +1,6 @@
 <template>
   <div class="template-main ">
-    tg.backgroundColor 2
+    tg.backgroundColor
 
     <div v-if="tg">
       <br>
