@@ -1,6 +1,6 @@
 <template>
   <div class="template-main ">
-    tg.backgroundColor
+    tg test
 
     <div v-if="tg">
       <br>
@@ -51,8 +51,8 @@ export default {
   },
   mounted() {
     this.tg = window.Telegram.WebApp
-    this.tg.requestContact()
-    console.log(this.tg.requestContact())
+    let test = this.tg.requestContact()
+    console.log(test,'test')
     console.log('2222')
     alert(3)
     console.log(this.tg)
