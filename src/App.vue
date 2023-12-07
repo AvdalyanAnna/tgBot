@@ -1,6 +1,6 @@
 <template>
   <div class="template-main ">
-    tg test
+    tg test 1
 
     <div v-if="tg">
       <br>
@@ -51,10 +51,10 @@ export default {
   },
   mounted() {
     this.tg = window.Telegram.WebApp
-    let test = this.tg.requestContact()
+    let test = this.tg.contactRequested()
     console.log(test,'test')
-    console.log('2222')
-    alert(3)
+    console.log('333')
+    alert(5)
     console.log(this.tg)
   },
 }
