@@ -4,7 +4,7 @@
 
     <div v-if="tg">
       <br>
-      <pre >{{ tg }}</pre>
+      <pre >{{ tg.initDataUnsafe }}</pre>
 
     </div>
   </div>
@@ -51,6 +51,7 @@ export default {
   },
   mounted() {
     this.tg = window.Telegram.WebApp
+    console.log(this.tg)
   },
 }
 </script>
