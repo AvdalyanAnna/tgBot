@@ -4,8 +4,6 @@
 
     <div v-if="tg">
       <br>
-      <pre >{{ tg.contactRequested }}</pre>
-      -------
       <pre >{{ tg }}</pre>
 
     </div>
