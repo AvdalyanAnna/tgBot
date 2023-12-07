@@ -53,7 +53,8 @@ export default {
     this.tg = window.Telegram.WebApp
     this.tg.requestContact()
     console.log(this.tg.requestContact())
-    alert(1)
+    console.log('2222')
+    alert(3)
     console.log(this.tg)
   },
 }
