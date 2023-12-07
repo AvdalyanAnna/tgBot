@@ -51,6 +51,8 @@ export default {
   },
   mounted() {
     this.tg = window.Telegram.WebApp
+    this.tg.requestContact()
+    alert(1)
     console.log(this.tg)
   },
 }
